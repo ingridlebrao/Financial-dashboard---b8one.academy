@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Dashboard - b8one.academy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,regular,700,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <div class="main">
+    <aside class="sidebar">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link nav__link--active">
+              <svg class="nav__icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.1485 23.7924L7.1485 6.70868" stroke="#197BBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.1483 23.7922L24.232 23.7922" stroke="#197BBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.9849 16.885C13.2126 14.8503 14.8105 13.6869 16.6123 12.0715L17.7305 16.4519L22.6033 12.3444" stroke="#197BBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                
+              Overview  
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg class="nav__icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" transform="translate(0.690369 0.250763)" fill="white"/>
+                <path d="M11.8814 9.53712H24.2607" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.8814 15.2506H24.2607" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.8814 20.9641H24.2607" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.12042 9.53725H7.12899" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.12018 15.2506H7.12874" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.12018 20.9641H7.12874" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                
+              Transactions  
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg class="nav__icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" transform="translate(0.690369 0.250763)" fill="white"/>
+                <path d="M23.054 8.25076H8.32673C7.42299 8.25076 6.69037 9.03426 6.69037 10.0008V20.5008C6.69037 21.4673 7.42299 22.2508 8.32673 22.2508H23.054C23.9577 22.2508 24.6904 21.4673 24.6904 20.5008V10.0008C24.6904 9.03426 23.9577 8.25076 23.054 8.25076Z" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.69037 13.2508H24.6904" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                
+              Cards  
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg class="nav__icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" transform="translate(0.690369 0.25061)" fill="white"/>
+                <path d="M17.2918 7.24361H10.8861C10.4614 7.24361 10.0541 7.41233 9.75377 7.71265C9.45345 8.01297 9.28473 8.42029 9.28473 8.84501V21.6563C9.28473 22.081 9.45345 22.4883 9.75377 22.7886C10.0541 23.089 10.4614 23.2577 10.8861 23.2577H20.4946C20.9193 23.2577 21.3266 23.089 21.6269 22.7886C21.9273 22.4883 22.096 22.081 22.096 21.6563V12.0478L17.2918 7.24361Z" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.2919 7.24338V12.0476H22.0961" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                
+              Invoices  
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg class="nav__icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" transform="translate(0.690369 0.250763)" fill="white"/>
+                <path d="M15.6902 17.7015C18.8487 17.7015 21.4091 15.1411 21.4091 11.9826C21.4091 8.82411 18.8487 6.26365 15.6902 6.26365C12.5317 6.26365 9.97125 8.82411 9.97125 11.9826C9.97125 15.1411 12.5317 17.7015 15.6902 17.7015Z" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.5938 17.4706L11.6052 24.9134L15.6902 22.4625L19.7751 24.9134L18.7866 17.4625" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                
+              Goals  
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg class="nav__icon" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" transform="translate(0.690369 0.250763)" fill="white"/>
+                <path d="M15.6906 17.5661C16.9691 17.5661 18.0055 16.5296 18.0055 15.2511C18.0055 13.9726 16.9691 12.9362 15.6906 12.9362C14.4121 12.9362 13.3757 13.9726 13.3757 15.2511C13.3757 16.5296 14.4121 17.5661 15.6906 17.5661Z" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.4006 17.5659C21.2979 17.7986 21.2672 18.0568 21.3126 18.3071C21.358 18.5574 21.4773 18.7884 21.6552 18.9702L21.7015 19.0165C21.845 19.1599 21.9588 19.3301 22.0365 19.5174C22.1142 19.7048 22.1541 19.9056 22.1541 20.1084C22.1541 20.3112 22.1142 20.5121 22.0365 20.6994C21.9588 20.8868 21.845 21.057 21.7015 21.2003C21.5582 21.3438 21.388 21.4576 21.2006 21.5353C21.0133 21.613 20.8125 21.6529 20.6096 21.6529C20.4068 21.6529 20.206 21.613 20.0187 21.5353C19.8313 21.4576 19.6611 21.3438 19.5178 21.2003L19.4715 21.154C19.2896 20.9761 19.0586 20.8568 18.8083 20.8114C18.558 20.766 18.2998 20.7966 18.0671 20.8994C17.8388 20.9972 17.6442 21.1596 17.5071 21.3666C17.37 21.5736 17.2964 21.8162 17.2954 22.0645V22.1957C17.2954 22.605 17.1328 22.9976 16.8434 23.287C16.554 23.5764 16.1615 23.739 15.7521 23.739C15.3428 23.739 14.9503 23.5764 14.6609 23.287C14.3715 22.9976 14.2089 22.605 14.2089 22.1957V22.1263C14.2029 21.8709 14.1202 21.6232 13.9716 21.4154C13.823 21.2076 13.6153 21.0493 13.3755 20.9611C13.1427 20.8584 12.8846 20.8277 12.6343 20.8731C12.3839 20.9185 12.153 21.0378 11.9711 21.2157L11.9248 21.262C11.7815 21.4055 11.6113 21.5194 11.4239 21.597C11.2366 21.6747 11.0357 21.7147 10.8329 21.7147C10.6301 21.7147 10.4293 21.6747 10.2419 21.597C10.0546 21.5194 9.88437 21.4055 9.74104 21.262C9.59755 21.1187 9.48372 20.9485 9.40605 20.7611C9.32839 20.5738 9.28841 20.373 9.28841 20.1702C9.28841 19.9673 9.32839 19.7665 9.40605 19.5792C9.48372 19.3918 9.59755 19.2216 9.74104 19.0783L9.78734 19.032C9.96523 18.8501 10.0846 18.6191 10.13 18.3688C10.1753 18.1185 10.1447 17.8603 10.042 17.6276C9.94417 17.3994 9.78175 17.2047 9.57472 17.0676C9.3677 16.9305 9.1251 16.8569 8.8768 16.8559H8.74562C8.33631 16.8559 7.94377 16.6933 7.65435 16.4039C7.36493 16.1145 7.20233 15.722 7.20233 15.3127C7.20233 14.9034 7.36493 14.5108 7.65435 14.2214C7.94377 13.932 8.33631 13.7694 8.74562 13.7694H8.81507C9.07048 13.7634 9.31818 13.6807 9.52598 13.5321C9.73378 13.3835 9.89206 13.1758 9.98025 12.936C10.083 12.7033 10.1136 12.4451 10.0682 12.1948C10.0228 11.9444 9.9035 11.7135 9.72561 11.5316L9.67931 11.4853C9.53582 11.342 9.42199 11.1718 9.34432 10.9844C9.26666 10.7971 9.22668 10.5962 9.22668 10.3934C9.22668 10.1906 9.26666 9.98979 9.34432 9.80244C9.42199 9.61509 9.53582 9.44488 9.67931 9.30155C9.82264 9.15806 9.99285 9.04423 10.1802 8.96657C10.3675 8.8889 10.5684 8.84893 10.7712 8.84893C10.974 8.84893 11.1748 8.8889 11.3622 8.96657C11.5495 9.04423 11.7197 9.15806 11.8631 9.30155L11.9094 9.34785C12.0912 9.52574 12.3222 9.64508 12.5725 9.69046C12.8228 9.73585 13.081 9.70521 13.3138 9.60249H13.3755C13.6037 9.50468 13.7984 9.34226 13.9355 9.13524C14.0726 8.92821 14.1461 8.68562 14.1471 8.43731V8.30613C14.1471 7.89683 14.3097 7.50429 14.5991 7.21486C14.8886 6.92544 15.2811 6.76284 15.6904 6.76284C16.0997 6.76284 16.4923 6.92544 16.7817 7.21486C17.0711 7.50429 17.2337 7.89683 17.2337 8.30613V8.37558C17.2347 8.62388 17.3083 8.86648 17.4454 9.07351C17.5825 9.28053 17.7771 9.44295 18.0053 9.54076C18.2381 9.64348 18.4963 9.67412 18.7466 9.62873C18.9969 9.58335 19.2279 9.46401 19.4097 9.28612L19.456 9.23982C19.5994 9.09633 19.7696 8.9825 19.9569 8.90484C20.1443 8.82717 20.3451 8.7872 20.5479 8.7872C20.7507 8.7872 20.9515 8.82717 21.1389 8.90484C21.3263 8.9825 21.4965 9.09633 21.6398 9.23982C21.7833 9.38315 21.8971 9.55336 21.9748 9.74071C22.0524 9.92806 22.0924 10.1289 22.0924 10.3317C22.0924 10.5345 22.0524 10.7353 21.9748 10.9227C21.8971 11.11 21.7833 11.2802 21.6398 11.4236L21.5935 11.4699C21.4156 11.6517 21.2963 11.8827 21.2509 12.133C21.2055 12.3833 21.2361 12.6415 21.3388 12.8743V12.936C21.4367 13.1642 21.5991 13.3589 21.8061 13.496C22.0131 13.6331 22.2557 13.7066 22.504 13.7076H22.6352C23.0445 13.7076 23.4371 13.8702 23.7265 14.1597C24.0159 14.4491 24.1785 14.8416 24.1785 15.2509C24.1785 15.6602 24.0159 16.0528 23.7265 16.3422C23.4371 16.6316 23.0445 16.7942 22.6352 16.7942H22.5658C22.3175 16.7952 22.0749 16.8688 21.8678 17.0059C21.6608 17.143 21.4984 17.3376 21.4006 17.5659V17.5659Z" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                
+              Settings  
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="upsell">
+        <svg class="upsell__illustration" width="72" height="80" viewBox="0 0 72 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M46.1739 23.4107L45.9544 24.4599L47.0152 24.3066C47.5365 24.2313 48.07 24.1923 48.6129 24.1923C54.7273 24.1923 59.684 29.149 59.684 35.2633C59.684 41.3777 54.7273 46.3344 48.6129 46.3344H14.4965C8.38216 46.3344 3.42548 41.3777 3.42548 35.2633C3.42548 32.0396 4.80235 29.1386 7.00237 27.1143C8.97469 25.2995 11.6055 24.1923 14.4965 24.1923H16.0313C18.2256 24.1923 20.1092 23.2026 21.5434 22.029C22.977 20.8558 24.0219 19.4511 24.5571 18.491L24.6034 18.4079L24.6275 18.316C25.8729 13.5647 30.1969 10.0604 35.3375 10.0604C41.4519 10.0604 46.4086 15.0171 46.4086 21.1315C46.4086 21.9135 46.3276 22.6758 46.1739 23.4107Z" stroke="#197BBD" stroke-width="1.5"/>
+          <path d="M40.4295 62.1394V52.6489" stroke="#197BBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M35.6854 57.3941L40.4306 52.6489L45.1758 57.3941" stroke="#197BBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M23.4833 44.515L28.2286 39.7698L32.9738 44.515" stroke="#197BBD" stroke-width="0.683017" stroke-linecap="round" stroke-linejoin="round"/>
+          <g clip-path="url(#clip0_1_152)">
+          <path d="M25.3369 60.1864L16.7088 68.8145C16.1793 69.344 16.1793 70.2024 16.7088 70.7319L22.4609 76.484C22.9904 77.0134 23.8488 77.0134 24.3782 76.484L33.0064 67.8558C33.5358 67.3264 33.5358 66.4679 33.0064 65.9385L27.2543 60.1864C26.7248 59.6569 25.8664 59.6569 25.3369 60.1864Z" stroke="#197BBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18.6264 72.6489L29.1719 62.1034" stroke="#197BBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <circle cx="17.5502" cy="17.6597" r="11.7215" transform="rotate(-30 17.5502 17.6597)" stroke="#197BBD" stroke-width="1.5"/>
+          <path d="M21.2506 17.1632C21.4687 17.541 21.5676 17.9494 21.5472 18.3883C21.535 18.8224 21.4034 19.2488 21.1523 19.6676C20.9095 20.0816 20.5641 20.4507 20.1162 20.775L20.92 22.1672C20.9816 22.274 20.9944 22.3816 20.9584 22.49C20.9354 22.6018 20.8705 22.6886 20.7637 22.7502C20.657 22.8119 20.5453 22.8271 20.4287 22.7958C20.325 22.7681 20.2424 22.7008 20.1807 22.594L19.3841 21.2141C18.8476 21.48 18.3172 21.633 17.7927 21.673C17.2682 21.7129 16.7039 21.6555 16.0997 21.5005C15.9537 21.4753 15.8476 21.4052 15.7812 21.2902C15.7243 21.1916 15.7091 21.0799 15.7356 20.9551C15.7703 20.8256 15.8369 20.7323 15.9355 20.6754C16.034 20.6185 16.1481 20.6074 16.2777 20.6421C17.213 20.9344 18.1086 20.8828 18.9644 20.4872L16.9727 17.0376C16.0631 17.2451 15.301 17.2909 14.6865 17.1748C14.0719 17.0587 13.5678 16.6598 13.1742 15.9781C12.828 15.3785 12.7564 14.7518 12.9594 14.098C13.1576 13.436 13.5991 12.8635 14.284 12.3805L13.7363 11.4318C13.6746 11.3251 13.6577 11.2198 13.6854 11.1162C13.7167 10.9996 13.7857 10.9105 13.8925 10.8488C13.9992 10.7872 14.1068 10.7744 14.2152 10.8103C14.3271 10.8334 14.4138 10.8983 14.4755 11.005L15.0161 11.9414C15.4751 11.7311 15.9409 11.5991 16.4136 11.5452C16.8863 11.4913 17.3158 11.5335 17.7023 11.6718C17.9061 11.7403 18.0365 11.8238 18.0934 11.9224C18.1455 12.0127 18.1543 12.1227 18.1196 12.2522C18.0801 12.3736 18.0111 12.4627 17.9125 12.5196C17.8304 12.567 17.744 12.5786 17.6533 12.5543C17.3316 12.4334 16.9738 12.3826 16.5798 12.402C16.1858 12.4214 15.8068 12.5143 15.4429 12.6806L17.3776 16.0317C17.977 15.8938 18.4995 15.822 18.9454 15.8165C19.3947 15.7981 19.8168 15.8938 20.2118 16.1038C20.6103 16.3008 20.9566 16.654 21.2506 17.1632ZM13.9238 15.5124C14.1609 15.9231 14.4902 16.171 14.9118 16.2562C15.3415 16.3366 15.8696 16.3219 16.4961 16.2121L14.7036 13.1074C14.244 13.4494 13.9422 13.8372 13.7983 14.2707C13.6496 14.6961 13.6915 15.11 13.9238 15.5124ZM19.6965 20.0481C20.1432 19.7026 20.4426 19.3108 20.5947 18.8725C20.7421 18.426 20.702 18.0056 20.4744 17.6113C20.2196 17.189 19.8791 16.9311 19.4528 16.8377C19.0218 16.7361 18.4866 16.7385 17.8471 16.8449L19.6965 20.0481Z" fill="#197BBD"/>
+          <path d="M2.67548 35.2621C2.67548 41.7907 7.96794 47.0831 14.4965 47.0831H48.6129C55.1415 47.0831 60.434 41.7907 60.434 35.2621C60.434 28.7335 55.1415 23.441 48.6129 23.441C48.034 23.441 47.4647 23.4826 46.908 23.5631C47.0722 22.7779 47.1586 21.9641 47.1586 21.1302C47.1586 14.6016 41.8661 9.30914 35.3375 9.30914C29.8476 9.30914 25.2317 13.0516 23.902 18.1246C22.9142 19.8967 19.9571 23.441 16.0313 23.441H14.4965C11.41 23.441 8.59984 24.6239 6.49454 26.5611C4.14666 28.7215 2.67548 31.82 2.67548 35.2621Z" fill="white"/>
+          <path d="M46.1739 23.4095L45.9544 24.4586L47.0152 24.3054C47.5365 24.2301 48.07 24.191 48.6129 24.191C54.7273 24.191 59.684 29.1477 59.684 35.2621C59.684 41.3764 54.7273 46.3331 48.6129 46.3331H14.4965C8.38216 46.3331 3.42548 41.3764 3.42548 35.2621C3.42548 32.0384 4.80235 29.1373 7.00237 27.113C8.97469 25.2982 11.6055 24.191 14.4965 24.191H16.0313C18.2256 24.191 20.1092 23.2014 21.5434 22.0278C22.977 20.8546 24.0219 19.4498 24.5571 18.4897L24.6034 18.4067L24.6275 18.3147C25.8729 13.5635 30.1969 10.0591 35.3375 10.0591C41.4519 10.0591 46.4086 15.0158 46.4086 21.1302C46.4086 21.9122 46.3276 22.6745 46.1739 23.4095Z" stroke="#197BBD" stroke-width="1.5"/>
+          <path d="M68.7413 14.276C68.5902 15.9113 67.9764 17.4698 66.9719 18.7691C65.9673 20.0684 64.6135 21.0547 63.0688 21.6127C61.5242 22.1706 59.8526 22.2771 58.2496 21.9197C56.6466 21.5623 55.1786 20.7557 54.0173 19.5944C52.856 18.4331 52.0494 16.9651 51.692 15.3621C51.3346 13.7591 51.4411 12.0875 51.999 10.5428C52.5569 8.99817 53.5433 7.64436 54.8425 6.6398C56.1418 5.63524 57.7003 5.02149 59.3357 4.87036C58.3782 6.16569 57.9175 7.76165 58.0373 9.36797C58.1571 10.9743 58.8494 12.4843 59.9884 13.6232C61.1274 14.7622 62.6374 15.4546 64.2437 15.5744C65.85 15.6942 67.446 15.2334 68.7413 14.276V14.276Z" stroke="#197BBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="20.0939" y="38.423" width="16.2694" height="13.4883" fill="white"/>
+          <path d="M28.2286 49.259V39.7685" stroke="#197BBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M28.2286 47.9134V38.423" stroke="#197BBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M23.4832 43.1682L28.2284 38.423L32.9736 43.1682" stroke="#197BBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+          <clipPath id="clip0_1_152">
+          <rect width="16.2694" height="16.2694" fill="white" transform="translate(13.3541 68.3349) rotate(-45)"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <span class="upsell__description">
+          Give your money awesome space in cloud
+        </span>
+        <a href="#" class="upsell__button">
+          Upgrade to premium
+          <svg class="upsell__icon" width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.43262 8.90073V1.62207" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.793945 5.2614L4.43327 1.62207L8.0726 5.2614" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <div class="header__block--left">
+          <h2 class="header__title">
+            Weekly sumup
+          </h2>
+          <p class="header__description">
+            Get summary of your weekly online transactions here.
+          </p>
+        </div>
+        <div class="header__block--right">
+          <div class="user-actions">
+            <div class="user-actions-message">
+              <button class="user-actions-message__link">
+                <svg class="user-actions-message__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.79559 4.25281H20.7956C21.8956 4.25281 22.7956 5.15281 22.7956 6.25281V18.2528C22.7956 19.3528 21.8956 20.2528 20.7956 20.2528H4.79559C3.69559 20.2528 2.79559 19.3528 2.79559 18.2528V6.25281C2.79559 5.15281 3.69559 4.25281 4.79559 4.25281Z" fill="#E3E3E3"/>
+                  <path d="M22.7956 6.25281L12.7956 13.2528L2.79559 6.25281" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="user-actions-alert">
+              <button class="user-actions-alert__link">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_292)">
+                    <path d="M18.7956 8.25281C18.7956 6.66151 18.1635 5.13539 17.0382 4.01017C15.913 2.88495 14.3869 2.25281 12.7956 2.25281C11.2043 2.25281 9.67817 2.88495 8.55295 4.01017C7.42773 5.13539 6.79559 6.66151 6.79559 8.25281C6.79559 15.2528 3.79559 17.2528 3.79559 17.2528H21.7956C21.7956 17.2528 18.7956 15.2528 18.7956 8.25281Z" fill="#E3E3E3"/>
+                    <path d="M14.5256 21.2528C14.3498 21.5559 14.0974 21.8075 13.7938 21.9823C13.4902 22.1572 13.146 22.2493 12.7956 22.2493C12.4452 22.2493 12.101 22.1572 11.7974 21.9823C11.4937 21.8075 11.2414 21.5559 11.0656 21.2528" stroke="#E3E3E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs> 
+                    <clipPath id="clip0_1_292">
+                      <rect width="24" height="24" fill="white" transform="translate(0.795593 0.252808)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="user-actions-alert__notification"></span>
+              </button>
+            </div>
+            <div class="user-actions-profile">
+              <img class="user-actions-profile__avatar" src="./assets/images/avar-profile.png" alt="Avatar Profile">
+              <div class="user-actions-profile__info">
+                <span class="user-actions-profile__name">
+                  Andrew
+                </span>
+                <span class="user-actions-profile__role">
+                  Admin account
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-finance">
+        <div class="main-finance__block--left">
+          <div class="credit-card-block">
+            <h3 class="credit-card-block__title">
+              Cards
+            </h3>
+            <ul class="credit-card-block__list">
+              <li class="credit-card-block__item">
+                <div class="credit-card-info">
+                  <div class="credit-card-info__block--left">
+                    <div class="credit-card-info__card">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                        </div>
+                      </div>
+                      <div class="credit-card-info__arrows">
+                        <svg class="swiper-button-prev" width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.597 1.67169L1.96356 11.3051L11.597 20.9386" stroke="#197BBD" stroke-width="2.58466" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg class="swiper-button-next" width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.49235 1.67169L11.1258 11.3051L1.49235 20.9386" stroke="#197BBD" stroke-width="2.58466" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                          
+                      </div>
+                    </div>
+                    <div class="credit-card-info__limit">
+                      <div class="credit-card-info__progress">
+                        <div class="credit-card-info__progress-bar"></div>
+                      </div>
+                      <span class="credit-card-info__text">
+                        Weekly payment limit
+                      </span>
+                      <span class="credit-card-info__text credit-card-info__text--black">
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div class="credit-card-info__block--right">
+                    <div class="credit-card-info__balance">
+                      <span class="credit-card-info__text credit-card-info__text--blue credit-card-info__text--dollar">
+                      </span>
+                      <span class="credit-card-info__text">
+                        Current balance
+                      </span>
+                    </div>
+                    <div class="credit-card-info__balance">
+                      <span class="credit-card-info__text credit-card-info__text--green credit-card-info__text--dollar">
+                      </span>
+                      <span class="credit-card-info__text">
+                        Income
+                      </span>
+                    </div>
+                    <div class="credit-card-info__balance">
+                      <span class="credit-card-info__text credit-card-info__text--red credit-card-info__text--dollar">
+                      </span>
+                      <span class="credit-card-info__text">
+                        Outcome
+                      </span>
+                    </div>
+                    <div class="credit-card-info__switcher">
+                      <input class="credit-card-info__input" type="checkbox" id="cardSwitch">
+                      <label class="credit-card-info__switch" for="cardSwitch"></label>
+                      <span class="credit-card-info__text">
+                        Deacivate card
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="transaction-block">
+            <h3 class="transaction-block__title">
+              Transaction history
+            </h3>
+            <table class="transaction-block-table">
+              <thead class="transaction-block-table__thead">
+                <tr class="transaction-block-table__trow transaction-block-table__trow--noborder">
+                  <th class="transaction-block-table__th">
+                    <span class="transaction-block-table__title">
+                      Reciever
+                    </span>
+                  </th>
+                  <th class="transaction-block-table__th">
+                    <span class="transaction-block-table__title">
+                      Type
+                    </span>
+                  </th>
+                  <th class="transaction-block-table__th">
+                    <span class="transaction-block-table__title">
+                      Date
+                    </span>
+                  </th>
+                  <th class="transaction-block-table__th">
+                    <span class="transaction-block-table__title">
+                      Amount
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="transaction-block-table__body">
+                <tr class="transaction-block-table__trow">
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text">
+                      <svg class="transaction-block-table__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.948242" y="0.931671" width="20.4006" height="20.4006" rx="6.00032" fill="#EFEFEF"/>
+                        <path d="M9.10531 16.8413C9.38147 16.8413 9.60534 16.6174 9.60534 16.3413C9.60534 16.0651 9.38147 15.8412 9.10531 15.8412C8.82916 15.8412 8.60529 16.0651 8.60529 16.3413C8.60529 16.6174 8.82916 16.8413 9.10531 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.6052 16.8413C14.8814 16.8413 15.1052 16.6174 15.1052 16.3413C15.1052 16.0651 14.8814 15.8412 14.6052 15.8412C14.3291 15.8412 14.1052 16.0651 14.1052 16.3413C14.1052 16.6174 14.3291 16.8413 14.6052 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.10449 6.34036H7.1046L8.44467 13.0357C8.4904 13.2659 8.61564 13.4727 8.79847 13.6199C8.98129 13.7671 9.21006 13.8453 9.44473 13.8408H14.305C14.5397 13.8453 14.7684 13.7671 14.9513 13.6199C15.1341 13.4727 15.2593 13.2659 15.305 13.0357L16.1051 8.8405H7.60463" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Tesco Market
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      Shopping
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      13 Dec 2020
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--dark">
+                      $75.67
+                    </span>
+                  </td>
+                </tr>
+                <tr class="transaction-block-table__trow">
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text">
+                      <svg class="transaction-block-table__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.948242" y="0.931671" width="20.4006" height="20.4006" rx="6.00032" fill="#EFEFEF"/>
+                        <path d="M9.10531 16.8413C9.38147 16.8413 9.60534 16.6174 9.60534 16.3413C9.60534 16.0651 9.38147 15.8412 9.10531 15.8412C8.82916 15.8412 8.60529 16.0651 8.60529 16.3413C8.60529 16.6174 8.82916 16.8413 9.10531 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.6052 16.8413C14.8814 16.8413 15.1052 16.6174 15.1052 16.3413C15.1052 16.0651 14.8814 15.8412 14.6052 15.8412C14.3291 15.8412 14.1052 16.0651 14.1052 16.3413C14.1052 16.6174 14.3291 16.8413 14.6052 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.10449 6.34036H7.1046L8.44467 13.0357C8.4904 13.2659 8.61564 13.4727 8.79847 13.6199C8.98129 13.7671 9.21006 13.8453 9.44473 13.8408H14.305C14.5397 13.8453 14.7684 13.7671 14.9513 13.6199C15.1341 13.4727 15.2593 13.2659 15.305 13.0357L16.1051 8.8405H7.60463" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Tesco Market
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      Shopping
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      13 Dec 2020
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--dark">
+                      $75.67
+                    </span>
+                  </td>
+                </tr>
+                <tr class="transaction-block-table__trow">
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text">
+                      <svg class="transaction-block-table__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.948242" y="0.931671" width="20.4006" height="20.4006" rx="6.00032" fill="#EFEFEF"/>
+                        <path d="M9.10531 16.8413C9.38147 16.8413 9.60534 16.6174 9.60534 16.3413C9.60534 16.0651 9.38147 15.8412 9.10531 15.8412C8.82916 15.8412 8.60529 16.0651 8.60529 16.3413C8.60529 16.6174 8.82916 16.8413 9.10531 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.6052 16.8413C14.8814 16.8413 15.1052 16.6174 15.1052 16.3413C15.1052 16.0651 14.8814 15.8412 14.6052 15.8412C14.3291 15.8412 14.1052 16.0651 14.1052 16.3413C14.1052 16.6174 14.3291 16.8413 14.6052 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.10449 6.34036H7.1046L8.44467 13.0357C8.4904 13.2659 8.61564 13.4727 8.79847 13.6199C8.98129 13.7671 9.21006 13.8453 9.44473 13.8408H14.305C14.5397 13.8453 14.7684 13.7671 14.9513 13.6199C15.1341 13.4727 15.2593 13.2659 15.305 13.0357L16.1051 8.8405H7.60463" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Tesco Market
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      Shopping
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      13 Dec 2020
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--dark">
+                      $75.67
+                    </span>
+                  </td>
+                </tr>
+                <tr class="transaction-block-table__trow">
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text">
+                      <svg class="transaction-block-table__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.948242" y="0.931671" width="20.4006" height="20.4006" rx="6.00032" fill="#EFEFEF"/>
+                        <path d="M9.10531 16.8413C9.38147 16.8413 9.60534 16.6174 9.60534 16.3413C9.60534 16.0651 9.38147 15.8412 9.10531 15.8412C8.82916 15.8412 8.60529 16.0651 8.60529 16.3413C8.60529 16.6174 8.82916 16.8413 9.10531 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.6052 16.8413C14.8814 16.8413 15.1052 16.6174 15.1052 16.3413C15.1052 16.0651 14.8814 15.8412 14.6052 15.8412C14.3291 15.8412 14.1052 16.0651 14.1052 16.3413C14.1052 16.6174 14.3291 16.8413 14.6052 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.10449 6.34036H7.1046L8.44467 13.0357C8.4904 13.2659 8.61564 13.4727 8.79847 13.6199C8.98129 13.7671 9.21006 13.8453 9.44473 13.8408H14.305C14.5397 13.8453 14.7684 13.7671 14.9513 13.6199C15.1341 13.4727 15.2593 13.2659 15.305 13.0357L16.1051 8.8405H7.60463" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Tesco Market
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      Shopping
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      13 Dec 2020
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--dark">
+                      $75.67
+                    </span>
+                  </td>
+                </tr>
+                <tr class="transaction-block-table__trow">
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text">
+                      <svg class="transaction-block-table__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.948242" y="0.931671" width="20.4006" height="20.4006" rx="6.00032" fill="#EFEFEF"/>
+                        <path d="M9.10531 16.8413C9.38147 16.8413 9.60534 16.6174 9.60534 16.3413C9.60534 16.0651 9.38147 15.8412 9.10531 15.8412C8.82916 15.8412 8.60529 16.0651 8.60529 16.3413C8.60529 16.6174 8.82916 16.8413 9.10531 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.6052 16.8413C14.8814 16.8413 15.1052 16.6174 15.1052 16.3413C15.1052 16.0651 14.8814 15.8412 14.6052 15.8412C14.3291 15.8412 14.1052 16.0651 14.1052 16.3413C14.1052 16.6174 14.3291 16.8413 14.6052 16.8413Z" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.10449 6.34036H7.1046L8.44467 13.0357C8.4904 13.2659 8.61564 13.4727 8.79847 13.6199C8.98129 13.7671 9.21006 13.8453 9.44473 13.8408H14.305C14.5397 13.8453 14.7684 13.7671 14.9513 13.6199C15.1341 13.4727 15.2593 13.2659 15.305 13.0357L16.1051 8.8405H7.60463" stroke="#404040" stroke-width="0.996054" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Tesco Market
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      Shopping
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--light">
+                      13 Dec 2020
+                    </span>
+                  </td>
+                  <td class="transaction-block-table__column">
+                    <span class="transaction-block-table__text transaction-block-table__text--dark">
+                      $75.67
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="main-finance__block--right">
+          <div class="goals-block">
+            <h3 class="goals-block__title">
+              Goals
+              <svg class="goals-block__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.2762 22.7996C17.7991 22.7996 22.2762 18.3225 22.2762 12.7996C22.2762 7.27677 17.7991 2.79962 12.2762 2.79962C6.7534 2.79962 2.27625 7.27677 2.27625 12.7996C2.27625 18.3225 6.7534 22.7996 12.2762 22.7996Z" fill="#FFC145"/>
+                <path d="M12.2762 8.79962V16.7996" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.27625 12.7996H16.2762" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </h3>
+            <ul class="goals-block__list">
+              <li class="goals-block__list-item">
+                <div class="goals-block-card">
+                  <span class="goals-block-card__price">
+                    $550
+                  </span>
+                  <span class="goals-block-card__date">
+                    12/20/20
+                  </span>
+                  <svg class="goals-block-card__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.1416 5.42456C17.4416 5.42456 17.2083 5.89123 16.7416 6.35789L3.20826 28.5246C2.97493 28.7579 2.97493 29.2246 2.97493 29.4579C2.97493 30.6246 3.90826 31.0912 4.60826 31.0912H31.6749C32.6083 31.0912 33.3083 30.6246 33.3083 29.4579C33.3083 28.9912 33.3083 28.9912 33.0749 28.5246L19.7749 6.35789C19.3083 5.89123 18.8416 5.42456 18.1416 5.42456ZM18.1416 8.92456L25.8416 21.7579H23.9749L20.4749 18.2579L18.1416 21.7579L15.8083 18.2579L12.3083 21.7579H10.2083L18.1416 8.92456Z" fill="url(#paint0_linear_1_229)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_229" x1="18.1416" y1="5.42456" x2="18.1416" y2="31.0912" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#7CB4F9"/>
+                    <stop offset="1" stop-color="#6DA2E4"/>
+                    </linearGradient>
+                    </defs>
+                  </svg>
+                  <span class="goals-block-card__name">
+                    Holidays
+                  </span>
+                </div>
+              </li>
+              <li class="goals-block__list-item">
+                <div class="goals-block-card">
+                  <span class="goals-block-card__price">
+                    $550
+                  </span>
+                  <span class="goals-block-card__date">
+                    12/20/20
+                  </span>
+                  <svg class="goals-block-card__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.5126 22.8952L23.5935 17.9677V14.3143C23.5942 14.2032 23.5729 14.0932 23.5309 13.9904C23.4889 13.8876 23.427 13.7941 23.3488 13.7152L14.9113 5.27772C14.8329 5.19863 14.7396 5.13586 14.6368 5.09303C14.5339 5.05019 14.4236 5.02814 14.3123 5.02814C14.2009 5.02814 14.0906 5.05019 13.9878 5.09303C13.885 5.13586 13.7916 5.19863 13.7132 5.27772L6.11945 12.8715C6.04037 12.9499 5.9776 13.0432 5.93476 13.146C5.89193 13.2489 5.86987 13.3591 5.86987 13.4705C5.86987 13.5819 5.89193 13.6922 5.93476 13.795C5.9776 13.8978 6.04037 13.9912 6.11945 14.0696L14.557 22.5071C14.6358 22.5853 14.7293 22.6472 14.8321 22.6891C14.9349 22.7311 15.045 22.7524 15.156 22.7518H18.8179L23.737 27.6793C24.3702 28.3126 25.2292 28.6683 26.1248 28.6683C27.0204 28.6683 27.8793 28.3126 28.5126 27.6793C29.1459 27.046 29.5016 26.1871 29.5016 25.2915C29.5016 24.3959 29.1459 23.5369 28.5126 22.9037V22.8952ZM9.24977 12.129L11.182 14.0696L12.3801 12.8715L10.4395 10.9393L11.781 9.59772L15.4007 13.2258L16.5988 12.0277L12.9707 8.40803L14.3123 7.06647L19.8726 12.6268L13.4685 19.0308L7.9082 13.4705L9.24977 12.129ZM27.3145 26.4727C26.9983 26.787 26.5706 26.9634 26.1248 26.9634C25.679 26.9634 25.2512 26.787 24.9351 26.4727L19.7629 21.309C19.5831 21.1853 19.3788 21.1019 19.1638 21.0643H15.502L14.6582 20.2205L21.0623 13.8165L21.906 14.6602V18.3221C21.9069 18.5434 21.9948 18.7556 22.1507 18.9127L27.3145 24.0933C27.6287 24.4095 27.8052 24.8372 27.8052 25.283C27.8052 25.7288 27.6287 26.1565 27.3145 26.4727Z" fill="url(#paint0_linear_1_273)"/>
+                    <path d="M27.3145 26.4727C26.9983 26.787 26.5706 26.9634 26.1248 26.9634C25.679 26.9634 25.2512 26.787 24.9351 26.4727L19.7629 21.309C19.5831 21.1853 19.3788 21.1019 19.1638 21.0643H15.502L14.6582 20.2205L21.0623 13.8165L21.906 14.6602V18.3221C21.9069 18.5434 21.9948 18.7556 22.1507 18.9127L27.3145 24.0933C27.6287 24.4095 27.8052 24.8372 27.8052 25.283C27.8052 25.7288 27.6287 26.1565 27.3145 26.4727Z" fill="url(#paint1_linear_1_273)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_273" x1="17.6858" y1="5.02814" x2="17.6858" y2="28.6683" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFA764"/>
+                    <stop offset="1" stop-color="#F17F29"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1_273" x1="17.6858" y1="5.02814" x2="17.6858" y2="28.6683" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFA764"/>
+                    <stop offset="1" stop-color="#F17F29"/>
+                    </linearGradient>
+                    </defs>
+                  </svg>
+                    
+                  <span class="goals-block-card__name">
+                    Renovation
+                  </span>
+                </div>
+              </li>
+              <li class="goals-block__list-item">
+                <div class="goals-block-card">
+                  <span class="goals-block-card__price">
+                    $550
+                  </span>
+                  <span class="goals-block-card__date">
+                    12/20/20
+                  </span>
+                  <svg class="goals-block-card__icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32.352 16.8425C31.0182 10.8121 29.0107 7.59344 26.0329 6.71425C25.407 6.53064 24.7577 6.43891 24.1054 6.44194C23.2432 6.44194 22.4923 6.65199 21.698 6.87461C20.7408 7.14315 19.6535 7.44816 18.068 7.44816C16.4826 7.44816 15.3946 7.14378 14.4356 6.87524C13.6406 6.65199 12.8904 6.44194 12.0307 6.44194C11.3561 6.4396 10.6846 6.53103 10.0352 6.71362C7.07313 7.58903 5.06696 10.8064 3.71359 16.8388C2.25834 23.3302 2.97464 27.4287 5.72227 28.3795C6.0989 28.5123 6.49518 28.5808 6.89452 28.582C8.77679 28.582 10.2861 27.0142 11.3175 25.7307C12.4828 24.2779 13.8469 23.5409 18.068 23.5409C21.8382 23.5409 23.3985 24.0521 24.7462 25.7307C25.5933 26.7859 26.3939 27.5242 27.1926 27.989C28.2548 28.6066 29.3164 28.7437 30.3471 28.3896C31.9709 27.8356 32.9017 26.3709 33.1142 24.0352C33.2759 22.2441 33.0268 19.8914 32.352 16.8425ZM15.0493 16.5042H13.0369V18.5166C13.0369 18.7835 12.9309 19.0394 12.7422 19.2282C12.5535 19.4169 12.2975 19.5229 12.0307 19.5229C11.7638 19.5229 11.5079 19.4169 11.3192 19.2282C11.1305 19.0394 11.0244 18.7835 11.0244 18.5166V16.5042H9.012C8.74513 16.5042 8.48919 16.3982 8.30049 16.2095C8.11178 16.0208 8.00577 15.7648 8.00577 15.498C8.00577 15.2311 8.11178 14.9752 8.30049 14.7865C8.48919 14.5978 8.74513 14.4917 9.012 14.4917H11.0244V12.4793C11.0244 12.2124 11.1305 11.9565 11.3192 11.7678C11.5079 11.5791 11.7638 11.4731 12.0307 11.4731C12.2975 11.4731 12.5535 11.5791 12.7422 11.7678C12.9309 11.9565 13.0369 12.2124 13.0369 12.4793V14.4917H15.0493C15.3162 14.4917 15.5722 14.5978 15.7609 14.7865C15.9496 14.9752 16.0556 15.2311 16.0556 15.498C16.0556 15.7648 15.9496 16.0208 15.7609 16.2095C15.5722 16.3982 15.3162 16.5042 15.0493 16.5042ZM20.332 16.7557C20.0833 16.7557 19.8401 16.682 19.6332 16.5438C19.4264 16.4056 19.2652 16.2091 19.17 15.9793C19.0748 15.7495 19.0499 15.4966 19.0984 15.2526C19.147 15.0086 19.2667 14.7845 19.4426 14.6086C19.6186 14.4327 19.8427 14.3129 20.0867 14.2644C20.3306 14.2158 20.5835 14.2407 20.8134 14.3359C21.0432 14.4311 21.2396 14.5923 21.3778 14.7992C21.516 15.006 21.5898 15.2492 21.5898 15.498C21.5898 15.8316 21.4573 16.1515 21.2214 16.3874C20.9855 16.6232 20.6656 16.7557 20.332 16.7557V16.7557ZM23.0992 19.5229C22.8503 19.5229 22.607 19.449 22.4 19.3107C22.1931 19.1723 22.0319 18.9757 21.9368 18.7457C21.8417 18.5157 21.817 18.2626 21.8658 18.0185C21.9146 17.7745 22.0347 17.5504 22.2109 17.3746C22.3871 17.1988 22.6115 17.0793 22.8557 17.0311C23.0999 16.9829 23.3529 17.0083 23.5827 17.104C23.8124 17.1996 24.0087 17.3613 24.1465 17.5686C24.2843 17.7758 24.3576 18.0193 24.3569 18.2682C24.3561 18.6013 24.2232 18.9204 23.9874 19.1556C23.7516 19.3908 23.4322 19.5229 23.0992 19.5229V19.5229ZM23.0992 13.9886C22.8504 13.9886 22.6072 13.9149 22.4004 13.7767C22.1935 13.6384 22.0323 13.442 21.9371 13.2122C21.8419 12.9823 21.817 12.7295 21.8655 12.4855C21.9141 12.2415 22.0339 12.0174 22.2098 11.8415C22.3857 11.6656 22.6098 11.5458 22.8538 11.4972C23.0978 11.4487 23.3507 11.4736 23.5805 11.5688C23.8103 11.664 24.0068 11.8252 24.145 12.0321C24.2832 12.2389 24.3569 12.4821 24.3569 12.7308C24.3569 13.0644 24.2244 13.3844 23.9885 13.6202C23.7527 13.8561 23.4327 13.9886 23.0992 13.9886ZM25.8663 16.7557C25.6175 16.7557 25.3743 16.682 25.1675 16.5438C24.9606 16.4056 24.7994 16.2091 24.7042 15.9793C24.609 15.7495 24.5841 15.4966 24.6327 15.2526C24.6812 15.0086 24.801 14.7845 24.9769 14.6086C25.1528 14.4327 25.3769 14.3129 25.6209 14.2644C25.8649 14.2158 26.1178 14.2407 26.3476 14.3359C26.5774 14.4311 26.7739 14.5923 26.9121 14.7992C27.0503 15.006 27.1241 15.2492 27.1241 15.498C27.1241 15.8316 26.9915 16.1515 26.7557 16.3874C26.5198 16.6232 26.1999 16.7557 25.8663 16.7557V16.7557Z" fill="url(#paint0_linear_1_279)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_279" x1="18.0693" y1="6.44186" x2="18.0693" y2="28.582" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#22B04A"/>
+                    <stop offset="1" stop-color="#1E9540"/>
+                    </linearGradient>
+                    </defs>
+                  </svg>
+                  
+                  <span class="goals-block-card__name">
+                    Xbox
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="statics-block">
+            <h3 class="statics-block__title">
+              Outcome Statistics
+            </h3>
+            <div class="statics-block-info">
+              <div class="statics-block-info__row">
+                <div class="statics-block-info__column--left">
+                  <svg class="statics-block-info__icon" width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.700254" width="42.1416" height="43.4414" rx="3" fill="#FFEADA"/>
+                    <path d="M17.2334 30.3895C17.6525 30.3895 17.9923 30.0497 17.9923 29.6305C17.9923 29.2114 17.6525 28.8716 17.2334 28.8716C16.8143 28.8716 16.4745 29.2114 16.4745 29.6305C16.4745 30.0497 16.8143 30.3895 17.2334 30.3895Z" stroke="#F8964C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25.58 30.3895C25.9992 30.3895 26.3389 30.0497 26.3389 29.6305C26.3389 29.2114 25.9992 28.8716 25.58 28.8716C25.1609 28.8716 24.8211 29.2114 24.8211 29.6305C24.8211 30.0497 25.1609 30.3895 25.58 30.3895Z" stroke="#F8964C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.1602 14.4522H14.1958L16.2297 24.614C16.2991 24.9634 16.4891 25.2772 16.7666 25.5006C17.0441 25.724 17.3913 25.8426 17.7475 25.8358H25.124C25.4802 25.8426 25.8274 25.724 26.1049 25.5006C26.3824 25.2772 26.5725 24.9634 26.6419 24.614L27.8561 18.2467H14.9547" stroke="#F8964C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="statics-block-info__category">
+                  <div class="statics-block-info__progress">
+                    <div class="statics-block-info__progress-bar statics-block-info__progress-bar--orange">
+                      
+                    </div>
+                  </div>
+                  <span class="statics-block-info__name">
+                    Shoppping
+                  </span>
+                </div>
+                <span class="statics-block-info__percentage">
+                  52%
+                </span>
+              </div>
+              <div class="statics-block-info__row">
+                <div class="statics-block-info__column--left">
+                  <svg class="statics-block-info__icon" width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.443443" width="42.1416" height="43.4414" rx="3" fill="#DDF9E4"/>
+                    <path d="M22.6904 14.0225H13.1201C12.0155 14.0225 11.1201 14.918 11.1201 16.0225V23.7835C11.1201 24.8881 12.0155 25.7835 13.1201 25.7835H22.6904C23.795 25.7835 24.6904 24.8881 24.6904 23.7835V16.0225C24.6904 14.918 23.795 14.0225 22.6904 14.0225Z" stroke="#22A447" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24.6895 20.547C24.6895 19.4424 25.5849 18.547 26.6895 18.547H27.4798C28.0102 18.547 28.5189 18.7577 28.894 19.1327L30.4365 20.6752C30.8116 21.0503 31.0223 21.559 31.0223 22.0895V23.7845C31.0223 24.889 30.1268 25.7845 29.0223 25.7845H26.6895C25.5849 25.7845 24.6895 24.889 24.6895 23.7845V20.547Z" stroke="#22A447" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.1914 30.3058C16.4405 30.3058 17.4531 29.2931 17.4531 28.044C17.4531 26.7949 16.4405 25.7823 15.1914 25.7823C13.9423 25.7823 12.9297 26.7949 12.9297 28.044C12.9297 29.2931 13.9423 30.3058 15.1914 30.3058Z" stroke="#22A447" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.9512 30.3058C28.2003 30.3058 29.2129 29.2931 29.2129 28.044C29.2129 26.7949 28.2003 25.7823 26.9512 25.7823C25.7021 25.7823 24.6895 26.7949 24.6895 28.044C24.6895 29.2931 25.7021 30.3058 26.9512 30.3058Z" stroke="#22A447" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="statics-block-info__category">
+                  <div class="statics-block-info__progress">
+                    <div class="statics-block-info__progress-bar statics-block-info__progress-bar--green">
+                      
+                    </div>
+                  </div>
+                  <span class="statics-block-info__name">
+                    Shoppping
+                  </span>
+                </div>
+                <span class="statics-block-info__percentage">
+                  52%
+                </span>
+              </div>
+              <div class="statics-block-info__row">
+                <div class="statics-block-info__column--left">
+                  <svg class="statics-block-info__icon" width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.186401" width="42.1416" height="43.4414" rx="3" fill="#E4F0FF"/>
+                    <path d="M21.2963 21.4566L15.7873 26.9666L13.9173 26.1896L13.7503 26.3586L16.1303 27.9456L17.7183 30.3256L17.8863 30.1576L17.1103 28.2876L22.6193 22.7796L26.9473 29.0316L27.1573 28.8236L24.2703 21.1276L28.6703 16.7296C28.8364 16.5523 28.927 16.3173 28.9231 16.0744C28.9191 15.8315 28.8209 15.5996 28.6491 15.4278C28.4773 15.256 28.2454 15.1577 28.0025 15.1538C27.7595 15.1498 27.5246 15.2405 27.3473 15.4066L22.9473 19.8056L15.2533 16.9196L15.0433 17.1286L21.2963 21.4566V21.4566ZM26.6863 31.9396L22.3563 25.6866L19.3163 28.7266L20.0933 30.5966L17.4273 33.2616L14.7823 29.2946L10.8143 26.6486L13.4803 23.9826L15.3493 24.7586L18.3893 21.7186L12.1363 17.3906L14.7823 14.7456L22.4773 17.6306L26.0243 14.0836C26.2837 13.8179 26.5932 13.6064 26.935 13.4612C27.2768 13.316 27.6439 13.2401 28.0152 13.2379C28.3865 13.2357 28.7546 13.3072 29.0981 13.4483C29.4415 13.5893 29.7536 13.7972 30.0161 14.0597C30.2787 14.3223 30.4865 14.6343 30.6276 14.9778C30.7687 15.3213 30.8402 15.6893 30.8379 16.0606C30.8357 16.4319 30.7598 16.7991 30.6147 17.1409C30.4695 17.4826 30.258 17.7922 29.9923 18.0516L26.4453 21.5986L29.3313 29.2946L26.6853 31.9396H26.6863Z" fill="#70A6E8"/>
+                  </svg>
+                    
+                </div>
+                <div class="statics-block-info__category">
+                  <div class="statics-block-info__progress">
+                    <div class="statics-block-info__progress-bar statics-block-info__progress-bar--blue">
+                      
+                    </div>
+                  </div>
+                  <span class="statics-block-info__name">
+                    Shoppping
+                  </span>
+                </div>
+                <span class="statics-block-info__percentage">
+                  52%
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="new-transaction-block">
+            <div class="new-transaction-block__column--left">
+              <h3 class="new-transaction-block__title">
+                New transaction
+              </h3>
+              <div class="new-transaction-block__people">
+                <ul class="new-transaction-block__people-list">
+                  <li class="new-transaction-block__people-item">
+                    <img src="./assets/images/people-avatar.png" alt="Ann">
+                    <span class="new-transaction-block__people-name">
+                      Ann
+                    </span>
+                  </li>
+                  <li class="new-transaction-block__people-item">
+                    <img src="./assets/images/people-avatar.png" alt="Ann">
+                    <span class="new-transaction-block__people-name">
+                      Ann
+                    </span>
+                  </li>
+                  <li class="new-transaction-block__people-item">
+                    <img src="./assets/images/people-avatar.png" alt="Ann">
+                    <span class="new-transaction-block__people-name">
+                      Ann
+                    </span>
+                  </li>
+                  <li class="new-transaction-block__people-item">
+                    <img src="./assets/images/people-avatar.png" alt="Ann">
+                    <span class="new-transaction-block__people-name">
+                      Ann
+                    </span>
+                  </li>   
+                  <li class="new-transaction-block__people-item">
+                    <img src="./assets/images/people-avatar.png" alt="Ann">
+                    <span class="new-transaction-block__people-name">
+                      Ann
+                    </span>
+                  </li>
+                </ul>
+                <button class="new-transaction-block__people-button">
+                  <svg class="new-transaction-block__people-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.8429 22.5362C18.3657 22.5362 22.8429 18.059 22.8429 12.5362C22.8429 7.01332 18.3657 2.53616 12.8429 2.53616C7.32005 2.53616 2.8429 7.01332 2.8429 12.5362C2.8429 18.059 7.32005 22.5362 12.8429 22.5362Z" fill="#FFC145"/>
+                    <path d="M12.8429 8.53616V16.5362" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.8429 12.5362H16.8429" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Add new
+                </button>
+              </div>
+              <div class="new-transaction-handle">
+                <form class="new-transaction-handle__form">
+                  <input type="text" class="new-transaction-handle__input" placeholder="0">
+                  <button class="new-transaction-handle__button">Send the transfer</button>
+                </form>
+              </div>
+            </div>
+            <div class="new-transaction-block__column--right">
+              <img src="./assets/images/loan-image.png" alt="Get great loan!" class="new-transaction__loan">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>
